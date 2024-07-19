@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/progo.css">
+    <link rel="stylesheet" href="./CSS/azkar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">مرآة المؤمن</div>
+            <nav class="nav">
+                <ul>
+                    <li class="more">
+                        <a href="#">المزيد</a>
+                        <ul class="dropdown">
+                            <li><a href="./settings.html">الإعدادات</a></li>
+                            <li><a href="./tole.html" id="logoutButtono" style="display: none;">حفظ</a></li>
+                            <li><a href="./chat_bot.html">خدمة العملاء</a></li>
+                            <li><a href="login.html" id="loginButton">تسجيل الدخول</a></li>
+                            <li><a href="./create_account.html" id="registerButton">إنشاء حساب</a></li>
+                            <li><a href="#" id="logoutButton" style="display: none;">تسجيل الخروج</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="auth-required" id="homeButton">الصفحة الرئيسية</a></li>
+                    <li><a href="./ahadith.html" class="auth-required" id="ahadithButton">الأحاديث</a></li>
+                    <li><a href="./End-twba.html" class="auth-required" id="ahadithButton">التوبة <span class="new">قريباً</span></a></li>
+                    <li><a href="#" class="auth-required" id="taawonButton">التعاون</a></li>
+                    <li><a href="./profile.html" class="auth-required" id="profileButton">ملف الشخصي</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- القسم الحالي للموقع -->
+        <div class="hero-section">
+            <h2>طهر نفسك بقراءة القرآن</h2>
+            <p>قم بتطهير نفسك بقراءة القرآن. هذا الموقع يتحدث عن القرآن الكريم. يمكنك القراءة، ويمكنك الاستماع، ويمكنك التعلم عن أشياء كثيرة حول الإسلام.</p>
+            <div class="hero-buttons">
+                <button class="read-button">اقرأ القرآن</button>
+                <button class="audio-button">استمع للقرآن</button>
+            </div>
+        </div>
+        <div class="random-azkar">
+            <p id="azkar-text">أذكار اليوم: اسم النبي صلى الله عليه وسلم</p>
+        </div>
+        
+        
+        <!-- القسم الجديد للقرآن الكريم -->
+        <div class="quran-section">
+            <h2>اقرأ القرآن الكريم مع الترجمة</h2>
+            <div class="filter-buttons">
+                <button id="surahButton" class="active">السورة</button>
+                <button id="juzButton">الجزء</button>
+            </div>
+            <div class="sort-options">
+                <span>ترتيب حسب:</span>
+                <select id="sortOptions">
+                    <option value="ascending">تصاعدي</option>
+                    <option value="descending">تنازلي</option>
+                </select>
+            </div>
+            <div class="quran-grid" id="quranGrid">
+                <!-- البطاقات -->
+            </div>
+        </div>
+    </main>
+
+    <script src="./Java Script/scripts.js"></script>
+    <script src="./Java Script/azkar.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
